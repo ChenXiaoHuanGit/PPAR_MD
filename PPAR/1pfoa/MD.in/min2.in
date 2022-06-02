@@ -1,0 +1,11 @@
+&cntrl
+imin=1,
+maxcyc =20000,
+ncyc= 10000,
+ntb=1,
+ntc=1,
+ntf=1,
+ntpr = 500, #每多少步输出
+cut=9.0
+/
+END

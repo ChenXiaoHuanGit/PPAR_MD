@@ -1,0 +1,11 @@
+&cntrl
+imin=1,
+maxcyc =10000,
+ncyc= 5000,
+ntb=1,
+ntr=1,
+restraintmask = ':1-267',
+restraint_ wt=2,
+cut=9.0
+/
+END

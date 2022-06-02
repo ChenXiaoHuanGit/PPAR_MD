@@ -1,0 +1,7 @@
+pmemd -o -i min1.in -o min1.out -p com_solvated.top -c com_solvated.crd -r min1.rst -ref com_solvated.crd
+pmemd -o -i min2.in -o min2.out -p com_solvated.top -c min1.rst -r min2.rst 
+pmemd -O -i heat.in -o heat.out -p com_solvated.top -c min2.rst -r heat.rst -x heat.mdcrd -ref min2.rst
+pmemd -O -i density.in -o density.out -p com_solvated.top -c heat.rst -r density.rst -x density.mdcrd -ref heat.rst
+pmemd -O -i equil.in -o equil.out -p com_solvated.top -c density.rst -r equil.rst -x equil.mdcrd
+
+-O -i prod.in -o prod1.out -p com_solvated.top -c equil.rst -r prod1.rst -x prod1.mdcrd
